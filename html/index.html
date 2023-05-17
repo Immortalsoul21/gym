@@ -12,11 +12,71 @@
     body{
         margin: 0px;
         padding: 0px;
-        background-image: url('img/bg.jpg');
-        height: 2000;
+        background-image: url('img/img_girl.jpg');
+        
+    }
+    .left img{
+        display: inline-block;
+        width: 10%;
+        height: 10%;
+    }
+    .left{
+        display: inline-block;
+       border: 2px solid red;
+       position: absolute;
+
+    }
+    .mid{
+        display: block;
+        width: 67%;
+        margin: 10px auto;
+        border: 3px solid rgb(0, 38, 255);
+        
+    }
+    .right{
+        border: 2px solid rgb(0, 255, 47);
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 15px;
+    }
+    .navbar{
+        display: inline-block;
+
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+        text-align: center;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
     }
     </style>
     <body>
-        <p>hi</p>
+        <header class="header">
+            <!--left box for logo-->
+            <div class="left">
+                <img src="img/logo.png" alt="">
+                <div>tushar fitness</div>
+            </div>
+            <!--center box for navigation-->
+            <div class="mid">
+                <ul class="navbar">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Fitness Clculator</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+                
+            </div>
+            <!--right box for button-->
+            <div class="right">
+                i am right
+            </div>
+        </header>
+        
     </body>
 </html>
