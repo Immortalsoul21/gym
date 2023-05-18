@@ -12,23 +12,28 @@
     body{
         margin: 0px;
         padding: 0px;
-        background-image: url('img/img_girl.jpg');
+        background-image: url('img/bg.jpg');
+        background-position: top center;
         
     }
     .left img{
         display: inline-block;
-        width: 10%;
-        height: 10%;
+        width: 95%;
+    height: 86%;
     }
     .left{
         display: inline-block;
        border: 2px solid red;
        position: absolute;
+       top: 9px;
+    width: 186px;
+    height: 119px;
+    left: 20px;
 
     }
     .mid{
         display: block;
-        width: 67%;
+        width: 40%;
         margin: 10px auto;
         border: 3px solid rgb(0, 38, 255);
         
@@ -52,7 +57,22 @@
     .navbar li a{
         color: white;
         text-decoration: none;
-        padding: 5px 10px;
+        padding: 5px 20px;
+    }
+    .navbar li a:hover{
+          background-color: grey;
+    }
+    .btn{
+        margin:  0px 9px;
+        background-color: black;
+        color: white;
+        padding:4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(149, 141, 141);
     }
     </style>
     <body>
@@ -60,7 +80,9 @@
             <!--left box for logo-->
             <div class="left">
                 <img src="img/logo.png" alt="">
-                <div>tushar fitness</div>
+                <div style="
+                padding: 0 46px; color: white;
+            ">Tushar Fitness</div>
             </div>
             <!--center box for navigation-->
             <div class="mid">
@@ -74,7 +96,7 @@
             </div>
             <!--right box for button-->
             <div class="right">
-                i am right
+               <button class="btn">Call us now</button><button class="btn">Email us</button>
             </div>
         </header>
         
